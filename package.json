@@ -1,0 +1,49 @@
+{
+  "name": "kirara-player",
+  "version": "1.0.0",
+  "description": "A danmaku video player based on react-player.",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "esbuild src/*.ts src/*.tsx src/api/*.ts --format=cjs --target=es2015 --outdir=lib",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jecosine/kirara-player.git"
+  },
+  "keywords": [
+    "react",
+    "player",
+    "danmaku",
+    "react-component"
+  ],
+  "author": "Jecosine",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jecosine/kirara-player/issues"
+  },
+  "homepage": "https://github.com/Jecosine/kirara-player#readme",
+  "dependencies": {
+    "boxicons": "^2.1.4",
+    "framer-motion": "^10.16.4",
+    "react": "^18.2.0",
+    "react-player": "^2.13.0",
+    "react-spring": "^9.7.3",
+    "screenfull": "^6.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.38",
+    "@types/react-dom": "^18.2.17",
+    "autoprefixer": "^10.4.16",
+    "esbuild": "^0.19.8",
+    "eslint": "^8.54.0",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.3.2"
+  },
+  "externals": {
+    "react": "react",
+    "react-dom" : "reactDOM"
+  }
+}
